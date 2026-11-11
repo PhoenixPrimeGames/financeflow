@@ -244,6 +244,48 @@ These tests will be implemented during their corresponding development milestone
 
 **Conclusion:** The updated starter project passed linting.
 
+### TEST-007: Milestone 2 Domain Validation
+
+**Date:** November 10, 2026  
+**Status:** Passed  
+**Command:** `npm test`
+
+**Test files:**
+- `src/smoke.test.ts`
+- `src/domain/categories.test.ts`
+- `src/domain/money.test.ts`
+- `src/domain/transaction.test.ts`
+
+**Test coverage:**
+
+| Functionality | Tests Passed |
+|---|---:|
+| Testing environment | 1 |
+| Category filtering and validation | 5 |
+| Monetary input conversion | 9 |
+| Transaction field validation | 8 |
+| **Total** | **23** |
+
+**Observed results:**
+- 4 test files passed.
+- 23 individual tests passed.
+- 0 failed tests.
+- Execution duration: 238 milliseconds.
+
+**Additional verification:**
+- `npm run build`: Passed.
+- `npm run lint`: Passed.
+- Oxlint reported zero warnings and zero errors.
+
+**Conclusion:**
+
+The tested domain functions correctly handle predefined categories, monetary conversion, and transaction field validation for the implemented test cases.
+
+**Limitations:**
+
+Transaction creation, editing, deletion, persistent storage, and user-interface interactions have not yet been implemented or tested. Full functional requirement acceptance remains pending.
+
+
 ## 8. Test Data
 
 Financial tests will use fictional transaction information.
